@@ -4,7 +4,7 @@ from Adafruit_IO import MQTTClient
 class Adafruit_MQTT:
     AIO_FEED_IDs = ["nutnhan1", "nutnhan2"]
     AIO_USERNAME = "tienbuilam"
-    AIO_KEY = "aio_zwuh99aYlzEsc3y4VTdHtSMTUPAE"
+    AIO_KEY = "aio_vxpy02pJvvmFYbolsWiDNnSvz9Sl"
 
     def connected(self, client):
         print("Connected ...")
