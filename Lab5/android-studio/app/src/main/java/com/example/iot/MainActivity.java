@@ -24,7 +24,7 @@ import java.nio.charset.Charset;
 public class MainActivity extends AppCompatActivity {
 
     MQTTHelper mqttHelper;
-    TextView txtTemp, txtHumid;
+    TextView txtTemp, txtLight, txtHumid;
     LabeledSwitch btnLED, btnPUMP;
 
     @Override
@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         txtTemp = findViewById(R.id.txtTemp);
-        txtHumid = findViewById(R.id.txtHumid);
+        txtLight = findViewById(R.id.txtLight);
+        txtHumid = findViewById(R.id.txtHumid);   
 
         btnLED = findViewById(R.id.btnLED);
         btnPUMP = findViewById(R.id.btnPUMP);
@@ -101,7 +102,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if (topic.contains("cambien1")) {
                     txtTemp.setText(message.toString() + "°C");
-                } else if (topic.contains("cambien2")) {
+                } else if (topic.contains("cambien3")) {
+                    txtLight.setText(message.toString() + "Lux");
+                } else if (topic.contains("cambien3")) {
                     txtHumid.setText(message.toString() + "%");
                 } else if (topic.contains("nutnhan1")) {
                     btnLED.setOn(message.toString().equals("1"));

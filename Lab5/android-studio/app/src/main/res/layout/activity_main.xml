@@ -25,9 +25,23 @@
             android:id="@+id/txtTemp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="50"
+            android:layout_weight="33"
             android:background="#ff0000"
             android:text="20°C"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_margin="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtLight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="#00ff00"
+            android:text="100Lux"
             android:textSize="50sp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -39,7 +53,7 @@
             android:id="@+id/txtHumid"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="50"
+            android:layout_weight="33"
             android:background="#0000ff"
             android:text="70%"
             android:textSize="50sp"
@@ -50,6 +64,7 @@
         </TextView>
 
     </LinearLayout>
+
 
     <com.github.angads25.toggle.widget.LabeledSwitch
         android:id="@+id/btnLED"

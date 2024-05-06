@@ -23,7 +23,7 @@ public class MQTTHelper {
 
     final String clientId = MqttClient.generateClientId();
     final String username = "tienbuilam";
-    final String password = "aio_hebB49mwSkx89UKWuPKshy7NIKhS";
+    final String password = "aio_mSfX098SwwupkLL9bWWFxgidQ2T4";
 
     final String serverUri = "tcp://io.adafruit.com:1883";
 
